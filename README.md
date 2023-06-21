@@ -4,4 +4,4 @@ A basic counter that can go from 1 to 99999 and handle all the possible cases wh
 - HTML
 - CSS
 - JavaScript
-Demo Link : https://nitishkumar31.github.io/counter/
+### Demo Link : https://nitishkumar31.github.io/counter/
