@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #d8fff4;
+}
+
+header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Impact;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0.5rem 1rem;
+  color: darkslategrey;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper > div {
+  margin: 1.5rem 0;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    rgba(168, 239, 241, 1) 0%,
+    rgba(238, 168, 215, 1) 100%
+  );
+  height: 15rem;
+  width: 90vw;
+}
+
+#input-container > div {
+  margin: 1rem 0;
+}
+
+.para {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+}
+
+input {
+  height: 2.8rem;
+  width: 25rem;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+button {
+  background-color: rgb(218, 218, 218);
+  margin-left: 20rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px white;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+#counter-container {
+  background-color: #555555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  width: 70vw;
+}
+
+.counter-box {
+  position: relative;
+  background-color: honeydew;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 0 0 8px white;
+  margin: 0 0.7rem;
+  overflow: hidden;
+}
+
+.counter-box p {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-top: 3px solid black;
+  background-color: honeydew;
+}
+
+p.next {
+  position: absolute;
+  top: 4rem;
+}
+
+p.animate {
+  transition-duration: 0.5s;
+  top: 0px;
+}
+
+@media screen and (max-width: 972px) {
+  button {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  input {
+    width: 70vw;
+  }
+}
